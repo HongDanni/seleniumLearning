@@ -21,11 +21,12 @@ def savepic():
 url = 'https://www.oschina.net/search?q=python&scope=project'
 driver.get(url)  # 访问网址
 print(driver.current_url)
-savepic()
+# savepic()
 
 
 ele = driver.find_element_by_name('tag1')
 print(ele)
+print(type(ele))
 
 driver.close()  # driver要关闭
 
