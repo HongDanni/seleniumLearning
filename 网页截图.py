@@ -18,7 +18,6 @@ def savepic():
     base_dir = '/Users/dannihong/Documents/myproject/seleniumTest/imgs/'
     filename = '{}{:%Y%m%d%H%M%S}{:02}.png'.format(base_dir, datetime.datetime.now(), random.randint(10, 99))
     # 触发网页快照行为
-    # filename = '1.jpg'
     driver.save_screenshot(filename)
 
 

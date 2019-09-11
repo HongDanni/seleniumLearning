@@ -12,20 +12,20 @@ driver.set_window_size(1028, 2400)
 # 截图
 def savepic():
     # 存储网页快照图片
-    base_dir = '/Users/dannihong/Documents/myproject/seleniumTest/imgs/'
+    base_dir = '/Users/dannihong/Downloads/seleniumLearning/imgs/'
     filename = '{}{:%Y%m%d%H%M%S}.png'.format(base_dir, datetime.datetime.now())
     # 触发网页快照行为
     # filename = '1.jpg'
     driver.save_screenshot(filename)
 
-# 网址
 url = 'https://www.oschina.net/search?q=python&scope=project'
-# 访问网址
-driver.get(url)
-# 截图
+driver.get(url)  # 访问网址
+print(driver.current_url)
 savepic()
-time.sleep(3)
-savepic()
+
+
+ele = driver.find_element_by_name('tag1')
+print(ele)
 
 driver.close()  # driver要关闭
 
