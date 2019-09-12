@@ -1,4 +1,4 @@
-# coding: utf8
+# coding:utf8
 from selenium import webdriver
 import datetime
 import time
